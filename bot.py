@@ -1,3 +1,4 @@
+from concurrent.futures import process
 import discord
 
 client = discord.Client()
@@ -10,10 +11,10 @@ async def on_message(message):
         return
     if message.content.startswith("hello"):
 
-        if str(message.author) == "elytra.f#3331":  # make sure to change to your user name with hash code
-            await message.channel.send("Hello " + str(message.author) + "!")
+        if str(message.author) == "RahilDev#7975":  # make sure to change to your user name with hash code
+            await message.channel.send("Hello Master!")
         else:
             await message.channel.send("Hello, I am a test bot.")
 
 
-client.run('YOUR_TOKEN'
+client.run('OTYxMjg0OTYzNzU0NDUxMDA2.Yk2wYw.M5Dz_26AgE3Id3qlXql85FZwke4')
